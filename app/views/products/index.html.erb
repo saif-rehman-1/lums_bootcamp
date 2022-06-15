@@ -1,0 +1,7 @@
+<% @products.each do |product| %>
+  <b>Name: <%= product.name %><br></b>
+  Quantity<%= product.quantity %><br>
+  Price: <%= product.price %><br>
+  <%= link_to 'Show', product_path(product) %><br><br>
+  <%= link_to 'Edit', edit_product_path(product) %>
+<% end %>
